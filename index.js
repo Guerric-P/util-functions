@@ -21,3 +21,7 @@ function groupNeighbors(arr) {
     []
   );
 }
+
+function chainAsyncFunctions(arr) {
+  return arr.reduce((acc, cur) => acc.then(cur), Promise.resolve());
+}
