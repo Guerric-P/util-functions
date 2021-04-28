@@ -1,5 +1,5 @@
-function pair(items, number = 2) {
-  return items.reduce(
+function pair(arr, number = 2) {
+  return arr.reduce(
     (acc, cur, i) =>
       i % number
         ? Object.assign([...acc], {
