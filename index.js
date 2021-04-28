@@ -9,3 +9,11 @@ function pair(items, number = 2) {
     []
   );
 }
+
+function groupNeighbors(arr) {
+  return arr.reduce(
+    (acc, cur, i, { [i - 1]: last }) =>
+      (cur === last ? acc[acc.length - 1].push(cur) : acc.push([cur])) && acc,
+    []
+  );
+}
